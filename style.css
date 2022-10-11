@@ -1,0 +1,79 @@
+body {
+  font-family: 'Nova Mono', monospace;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container {
+  display: grid;
+  grid-template-rows: 100%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". .";
+}
+
+.input {
+  font-family: 'Nova Mono', monospace;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.i1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . .";
+  max-height: 97vh;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.i2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "."
+    ".";
+  flex-grow: 1;
+  align-items: center;
+}
+
+.square {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  outline: 1px solid black;
+  aspect-ratio: 1/1;
+  line-height: 100%;
+}
+
+.sT, .s×½ {
+  color: red
+}
+
+.s1000, .s×2 {
+  color: blue
+}
+
+.s⇅ {
+  color: purple
+}
+
+.unclicked {
+  color: white
+}
