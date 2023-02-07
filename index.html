@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Typhoon</title>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="typhoon.js" charset="utf-8"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
@@ -13,19 +12,19 @@
         <div class="container">
             <div class='i1' id="i1"></div>
             <div class="i2" id="i2">
-                <div>
-                    <div class="team1" contenteditable="true">team </div>
-                    <input id="input1" type="text" class="input"></input>
+                <div id="teamsWrapper">
+                    <div>
+                        <div contenteditable="true">team </div>
+                        <input id="input1" type="text" class="input"></input>
+                    </div>
+                    <div>
+                        <div contenteditable="true">team </div>
+                        <input id="input2" type="text" class="input"></input>
+                    </div>
                 </div>
-                <div>
-                    <div class="team2" contenteditable="true">team </div>
-                    <input id="input2" type="text" class="input"></input>
-                </div>
-                <div>
-                    <div class="team3" contenteditable="true">team </div>
-                    <input id="input3" type="text" class="input"></input>
-                </div>
+                <button id="addTeam" onclick="addTeam()">+</button>
             </div>
         </div>
+        <script type="text/javascript" src="typhoon.js" charset="utf-8"></script>
     </body>
 </html>
